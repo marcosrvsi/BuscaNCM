@@ -145,7 +145,7 @@ function consultar() {
             <div class="mt-2">Consultando...</div>
         </div>`;
 
-    fetch('proxy_ncm.php?ncm=' + encodeURIComponent(codigo))
+    fetch('https://bold-grass-d194.marcos-rv-si.workers.dev?ncm=' + encodeURIComponent(codigo))
         .then(res => res.json())
         .then(json => {
 
@@ -212,3 +212,4 @@ function consultar() {
 
 </body>
 </html>
+
